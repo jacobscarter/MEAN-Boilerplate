@@ -1,0 +1,7 @@
+<md-list ng-cloak>
+<md-subheader class="md-no-sticky">All Photos</md-subheader>
+  <md-list-item ng-repeat="photo in vm.photos" class="noright">
+    <img ng-src="{{photo.image.url}}" class="md-avatar" />
+    <p>{{photo.name}}</p>
+  </md-list-item>
+</md-list>

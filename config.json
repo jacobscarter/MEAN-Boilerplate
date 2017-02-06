@@ -1,0 +1,4 @@
+﻿{
+    "apiUrl": "<ENTER API URL HERE>",
+    "secret": "<ENTER JWT SALT SECRET HERE>"
+}

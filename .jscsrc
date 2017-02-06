@@ -1,0 +1,9 @@
+{
+  "preset": "google",
+  "maxErrors" : 100,
+  "maximumLineLength": 120,
+  "jsDoc": {
+    "checkAnnotations": "jsdoc3",
+    "checkTypes": "strictNativeCase"
+  }
+}

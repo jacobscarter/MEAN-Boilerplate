@@ -1,0 +1,45 @@
+﻿<md-sidenav
+    class="md-sidenav-left"
+    md-component-id="left"
+    md-is-locked-open="$mdMedia('gt-md')"
+    md-whiteframe="4">
+  <md-toolbar>
+    <div class="md-toolbar-tools">
+      <span class="side-nav-title">Degree Ditch</span>
+    </div>
+  </md-toolbar>
+  <md-content layout-padding>
+    <md-list>
+      <md-subheader class="md-no-sticky">Items</md-subheader>
+      <md-list-item ng-if="vm.currentUser.claims.indexOf('candidate') >= 0">
+        <md-icon class="md-default-theme" class="material-icons" ui-sref="">&#xE251;</md-icon>
+        <p>Candidate Placholder</p>
+      </md-list-item>
+      <md-list-item ng-if="vm.currentUser.claims.indexOf('employer') >= 0">
+        <md-icon class="md-default-theme" class="material-icons" ui-sref="">&#xE251;</md-icon>
+        <p>Employer Placholder</p>
+      </md-list-item>
+      <md-divider></md-divider>
+      <md-list-item>
+        <md-icon class="md-default-theme" class="material-icons" ui-sref="">&#xE251;</md-icon>
+        <p ui-sref="root.photos">Photos</p>
+      </md-list-item>
+    </md-list>
+  </md-content>
+</md-sidenav>
+<div layout="column" flex>
+  <md-toolbar layout="row">
+    <div class="md-toolbar-tools">
+      <md-button class="md-icon-button" aria-label="Menu" hide-gt-md ng-click="vm.toggleSideNav()">
+        <i class="material-icons">menu</i>
+      </md-button>
+      <span flex></span>
+      <md-button class="md-icon-button" aria-label="Notifications">
+        <i class="material-icons">notifications</i>
+      </md-button>
+    </div>
+  </md-toolbar>
+  <md-content layout-padding flex>
+    <div ui-view="workspace"></div>
+  </md-content>
+</div>

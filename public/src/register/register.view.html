@@ -1,0 +1,39 @@
+﻿<div layout="column" layout-align="center center" layout-fill="layout-fill" id="register-state">
+  <div layout="column" class="register-box md-whiteframe-z5">
+    <md-toolbar>
+      <h2 class="md-toolbar-tools"><span>Register</span></h2>
+    </md-toolbar>
+    <md-content layout="column" class="md-padding">
+      <md-input-container>
+        <label>First Name</label>
+        <input type="text" ng-model="vm.user.firstName" required/>
+      </md-input-container>
+      <md-input-container>
+        <label>Last Name</label>
+        <input type="text" ng-model="vm.user.lastName" required/>
+      </md-input-container>
+      <md-input-container>
+        <label>Username</label>
+        <input type="text" ng-model="vm.user.username" required/>
+      </md-input-container>
+      <md-input-container>
+        <label>Email</label>
+        <input type="email" ng-model="vm.user.email" required/>
+      </md-input-container>
+      <md-input-container>
+        <label>Password</label>
+        <input type="password" ng-model="vm.user.password" required/>
+      </md-input-container>
+      <md-input-container>
+        <md-checkbox ng-model="vm.user.employer" aria-label="Employer Account">
+          Employer Account
+        </md-checkbox>
+      </md-input-container>
+      <div layout="row" layout-align="center center" style="padding-top:20px;">
+        <md-button class="md-raised md-primary" ng-click="vm.register()">Register</md-button>
+        <div flex="flex"></div>
+        <md-button ui-sref="login" md-no-ink="md-no-ink">Login</md-button>
+      </div>
+    </md-content>
+  </div>
+</div>

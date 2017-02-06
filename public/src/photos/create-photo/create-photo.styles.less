@@ -1,0 +1,47 @@
+#create-photo-wrap {
+
+  .tagged-image-container {
+    display: inline-block;
+    position: relative;
+
+    image-tag {
+      //Find where position: relative is coming from.
+      //position: static !important;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+  }
+
+  .image-upload-dropzone {
+    border: 2px dashed rgba(33,150,243, 0.5);
+    width: 100%;
+    height: 300px;
+
+    h4 {
+      color: rgba(0,0,0,0.54);
+    }
+
+    i {
+      color: rgba(0,0,0,0.54);      
+      font-size: 80px;
+      margin-right: 20px;
+    }
+
+    #file-uploader {
+      display: none;
+    }
+  }
+
+  .tagged-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .image-tag-wrap {
+    
+    i {
+      color: #FFEB3B;
+    }
+  }
+}

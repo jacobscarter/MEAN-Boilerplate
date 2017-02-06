@@ -1,0 +1,86 @@
+
+{
+  "name": "MEAN-Boilerplate",
+  "description": "Boilerplate for MEAN Stack",
+  "version": "1.0.0",
+  "private": false,
+  "dependencies": {
+    "angular": "1.5.3",
+    "angular-animate": "1.5.3",
+    "angular-ui-router": "0.2.15",
+    "angular-file-upload": "*",
+    "bootstrap": "~3.3.1",
+    "jquery": "~2.1.3",
+    "jquery-ui": ">=1.9",
+    "angular-material": "1.1.0"
+  },
+  "resolutions": {
+    "angular": "1.5.x"
+  },
+  "install": {
+    "base": "public/dist/vendors",
+    "ignore": [
+      "bootstrap-css-only",
+      "font-awesome",
+      "rangy"
+    ],
+    "path": {
+      "map": "{name}/js",
+      "js": "{name}/js",
+      "css": "{name}/css",
+      "less": "{name}/less",
+      "scss": "{name}/scss",
+      "eot": "{name}/fonts",
+      "svg": "{name}/fonts",
+      "ttf": "{name}/fonts",
+      "woff": "{name}/fonts",
+      "woff2": "{name}/fonts",
+      "otf": "{name}/fonts",
+      "png": "{name}/css"
+    },
+    "sources": {
+      "angular": [
+        "bower_components/angular/angular.min.js",
+        "bower_components/angular/angular.min.js.map"
+      ],
+      "angular-animate": [
+        "bower_components/angular-animate/angular-animate.min.js",
+        "bower_components/angular-animate/angular-animate.min.js.map"
+      ],
+      "angular-messages": [
+        "bower_components/angular-messages/angular-messages.min.js",
+        "bower_components/angular-messages/angular-messages.min.js.map"
+      ],
+      "angular-aria": [
+        "bower_components/angular-aria/angular-aria.min.js",
+        "bower_components/angular-aria/angular-aria.min.js.map"
+      ],
+      "angular-ui-router": "bower_components/angular-ui-router/release/angular-ui-router.min.js",
+      "bootstrap": [
+        "bower_components/bootstrap/dist/css/bootstrap.min.css",
+        "bower_components/bootstrap/dist/css/bootstrap.min.css.map",
+        "bower_components/bootstrap/dist/js/bootstrap.min.js",
+        "bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.eot",
+        "bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.svg",
+        "bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf",
+        "bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff",
+        "bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"
+      ],
+      "jquery": [
+        "bower_components/jquery/dist/jquery.min.js",
+        "bower_components/jquery/dist/jquery.min.map"
+      ],
+      "jquery-ui": "bower_components/jquery-ui/jquery-ui.min.js",
+      "lodash": "bower_components/lodash/dist/lodash.min.js",
+      "angular-material": [
+        "bower_components/angular-material/angular-material.min.css",
+        "bower_components/angular-material/angular-material.min.js"
+      ],
+      "angular-file-upload": [
+        "bower_components/angular-file-upload/dist/angular-file-upload.min.js",
+        "bower_components/angular-file-upload/dist/angular-file-upload.min.js.map"
+      ]
+    }
+  },
+  "devDependencies": {}
+}

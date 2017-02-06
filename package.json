@@ -1,0 +1,53 @@
+{
+  "name": "MEAN-Boilerplate",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "postinstall": "gulp production"
+  },
+  "bugs": {
+    "url": "https://github.com/jacobscarter/MEAN-Boilerplate/issues"
+  },
+  "author": "Jacob Carter",
+  "description": "MEAN Boilerplate App",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jacobscarter/MEAN-Boilerplate"
+  },
+  "dependencies": {
+    "aws-sdk": "2.x",
+    "bcryptjs": "^2.1.0",
+    "body-parser": "^1.13.2",
+    "bower": "1.7.9",
+    "bower-installer": "1.2.0",
+    "del": "2.2.0",
+    "ejs": "^2.3.3",
+    "express": "^4.13.0",
+    "express-jwt": "^3.0.1",
+    "express-session": "^1.11.3",
+    "gulp": "3.9.1",
+    "gulp-concat": "2.6.0",
+    "gulp-jscs": "2.0.0",
+    "gulp-jscs-stylish": "1.4.0",
+    "gulp-jshint": "2.0.0",
+    "gulp-less": "3.0.5",
+    "gulp-removelogs": "0.1.0",
+    "gulp-rename": "1.2.2",
+    "gulp-uglify": "1.5.3",
+    "gulp-shell": "*",
+    "gulp-util": "3.0.7",
+    "jshint": "2.9.3",
+    "jshint-stylish": "2.2.1",
+    "jsonwebtoken": "^5.0.2",
+    "lodash": "^3.10.0",
+    "mongodb": "^2.1.16",
+    "mongoose": "^4.6.6",
+    "mongoskin": "^2.1.0",
+    "q": "^1.4.1",
+    "request": "^2.58.0",
+    "rootpath": "^0.1.2",
+    "run-sequence": "1.2.2"
+  }
+}

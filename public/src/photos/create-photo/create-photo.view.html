@@ -1,0 +1,29 @@
+<div layout="column" id="create-photo-wrap">
+  <md-card>
+    <md-card-title>
+      <md-card-title-text>
+        <span class="md-headline">
+          <md-input-container class="md-block">
+          <label>Photo Name</label>
+          <input ng-model="vm.photoName">
+        </md-input-container>
+          <md-button class="md-raised md-primary pull-right" ng-disabled="vm.fileUrl === null || vm.photoName.length === 0" ng-click="vm.saveImage()">SAVE</md-button>
+        </span>
+        <span class="md-subhead">Suggested 1200x800</span>
+      </md-card-title-text>
+    </md-card-title>
+    <md-card-content>
+      <div nv-file-drop="" uploader="vm.uploader" options="{ url: '/foo' }" ng-if="vm.uploader.queue.length === 0" id="tagged-image-wrap">
+        <div nv-file-over="" uploader="vm.uploader" over-class="another-file-over-class"
+             class="image-upload-dropzone" layout-align="center center" layout="row">
+          <div><i class="material-icons">add_a_photo</i></div>
+          <div><h4>Drag and Drop Your Photo or <a href="" id="file-uploader-link" ng-click="vm.triggerUploadLink($event)">Cick Here</a></h4></div>
+          <input id="file-uploader" type="file" nv-file-select uploader="vm.uploader" options="{ url: '/foo' }">
+        </div>
+      </div>
+      <div class="tagged-image-container">
+        <img ng-src="{{vm.fileUrl}}"  ng-if="vm.uploader.queue.length > 0" class="tagged-image">
+      </div>
+    </md-card-content>
+  </md-card>
+</div>
