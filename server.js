@@ -6,7 +6,7 @@ var bodyParser = require('body-parser');
 var expressJwt = require('express-jwt');
 var config = require('config.json');
 var mongoose = require('mongoose');
-mongoose.connect(process.env.MONGODB_URI);
+mongoose.connect('<MONGO CONNECTION URI>');
 
 var allowCrossDomain = function(req, res, next) {
     res.header('Access-Control-Allow-Origin', '*');
@@ -35,8 +35,7 @@ app.use('/api', expressJwt({ secret: config.secret }).unless({ path: ['/api/logi
 app.use('/api/login', require('./controllers/login.controller'));
 app.use('/api/register', require('./controllers/register.controller'));
 app.use('/api/s3', require('./controllers/s3.controller'));
-//Re-implement for file upload.
-//app.use('/api/galleries', require('./controllers/galleries.controller'));
+app.use('/api/galleries', require('./controllers/galleries.controller'));
 
 // make '/app' default route
 app.get('/', function (req, res) {
